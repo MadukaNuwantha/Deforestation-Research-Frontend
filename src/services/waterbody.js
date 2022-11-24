@@ -1,11 +1,12 @@
 import api from "../api/axios_requests"
 
 const predictWaterBodies = async (payload) => {
-    try {
-        let config = {}
-        let data = await api.post("/waterbod", payload, config)
+    let config = {
+        "Content-Type": "multipart/form-data"
     }
-    catch (err) { }
+    let data = await api.post("/waterbody", payload, config)
+
+
 }
 
 export default { predictWaterBodies }

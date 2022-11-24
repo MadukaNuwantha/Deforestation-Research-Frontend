@@ -44,7 +44,7 @@ const put = async (url, payload, config) => {
 const _delete = async (url) => {
     let result = null;
     try {
-        let response = await axios.put(`${root}/${url}`, payload, config);
+        let response = await axios.put(`${root}/${url}`);
         
         result = response.data
     } catch(error) {
