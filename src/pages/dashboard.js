@@ -1,16 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ExpenseOverviewComponent from '../components/expense_overview_component'
-import ImageUploader from '../components/image_uploader'
 import OrderStatComponent from '../components/order_stat_component'
 import PageFooter from '../components/page_footer'
 import SidebarComponent from '../components/sidebar_component'
 import TransactionComponent from '../components/transaction_component'
 
-export class DashboardScreen extends Component {
-    render() {
-        return (
-            <div>
-                <div class="layout-wrapper layout-content-navbar">
+export default function Dashboard() {
+  return (
+    <div>
+        <div class="layout-wrapper layout-content-navbar">
                     <div class="layout-container">
                         {/* <!-- Menu --> */}
                         <SidebarComponent/>
@@ -142,7 +140,6 @@ export class DashboardScreen extends Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        <ImageUploader />
                                         <div class="col-lg-4 col-md-4 order-1">
                                             <div class="row">
                                                 <div class="col-lg-6 col-md-12 col-6 mb-4">
@@ -327,9 +324,6 @@ export class DashboardScreen extends Component {
                     {/* <!-- Overlay --> */}
                     <div class="layout-overlay layout-menu-toggle"></div>
                 </div>
-            </div>
-        )
-    }
+    </div>
+  )
 }
-
-export default DashboardScreen

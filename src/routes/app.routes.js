@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import DashboardScreen from '../pages/dashboard_screen';
+import Dashboard from '../pages/dashboard';
 import ForestPatchScreen from '../pages/forestpatch_screen';
 import LandingScreen from '../pages/landing_screen';
 import SignInScreen from '../pages/signin_screen';
@@ -19,7 +19,7 @@ export class PageRoutes extends Component {
           <Route path='/wildfire' element={<WildfireScreen />} />
           <Route path='/signin' element={<SignInScreen />} />
           <Route path='/signup' element={<SignUpScreen />} />
-          <Route path='/dashboard' element={<DashboardScreen />} />
+          <Route path='/dashboard' element={<Dashboard />} />
         </Routes>
       </Router>
     )
