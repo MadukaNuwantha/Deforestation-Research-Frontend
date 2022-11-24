@@ -4,7 +4,7 @@ const predictWaterBodies = async (payload) => {
     let config = {
         "Content-Type": "multipart/form-data"
     }
-    let data = await api.post("predict/waterbody", payload, config)
+    let data = await api.post("predict/waterbody", payload, config, "predict")
 
     return data
 }

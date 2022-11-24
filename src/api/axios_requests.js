@@ -1,11 +1,14 @@
 import axios from "axios";
 
-const root = "http://127.0.0.1:8000"
+const root = {
+    "prediction" : "http://127.0.0.1:8000",
+    "user": "http://localhost:8080"
+}
 
-const get = async (url) => {
+const get = async (url, mode) => {
     let result = null;
     try {
-        let response = await axios.get(`${root}/${url}`);
+        let response = await axios.get(`${root[mode]}/${url}`);
         
         result = response.data
     } catch(error) {
@@ -15,10 +18,10 @@ const get = async (url) => {
     return result
 }
 
-const post = async (url, payload, config) => {
+const post = async (url, payload, config, mode) => {
     let result = null;
     try {
-        let response = await axios.post(`${root}/${url}`, payload, config);
+        let response = await axios.post(`${root[mode]}/${url}`, payload, config);
         
         result = response.data
     } catch(error) {
@@ -28,10 +31,10 @@ const post = async (url, payload, config) => {
     return result
 }
 
-const put = async (url, payload, config) => {
+const put = async (url, payload, config, mode) => {
     let result = null;
     try {
-        let response = await axios.put(`${root}/${url}`, payload, config);
+        let response = await axios.put(`${root[mode]}/${url}`, payload, config);
         
         result = response.data
     } catch(error) {
@@ -41,10 +44,10 @@ const put = async (url, payload, config) => {
     return result
 }
 
-const _delete = async (url) => {
+const _delete = async (url, mode) => {
     let result = null;
     try {
-        let response = await axios.put(`${root}/${url}`);
+        let response = await axios.put(`${root[mode]}/${url}`);
         
         result = response.data
     } catch(error) {

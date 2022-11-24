@@ -4,7 +4,7 @@ const predictForestPatches = async (payload) => {
     let config = {
         "Content-Type": "multipart/form-data"
     }
-    let data = await api.post("predict/forestpatch", payload, config)
+    let data = await api.post("predict/forestpatch", payload, config, "predict")
 
     return data
 }
