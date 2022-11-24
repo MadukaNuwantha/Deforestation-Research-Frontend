@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import PageFooter from '../components/page_footer'
 import SidebarComponent from '../components/sidebar_component'
-import waterbody from '../services/waterbody';
+import wildfire from '../services/wildfire';
 
-export default function WaterbodyScreen() {
+export default function WildfireScreen() {
     const [imgData, setImgData] = useState(null)
     const [imgUrl, setImgUrl] = useState(null)
     const [responseData, setResponseData] = useState(null);
@@ -25,7 +25,7 @@ export default function WaterbodyScreen() {
     const submit = async () => {
         let form = new FormData()
         form.append("file", imgData)
-        let res = await waterbody.predictWaterBodies(form)
+        let res = await wildfire.predictWildfire(form)
         console.log(res)
         setResponseData(res)
     }
