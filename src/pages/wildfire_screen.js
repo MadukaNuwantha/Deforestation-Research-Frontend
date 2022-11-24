@@ -133,6 +133,11 @@ export default function WildfireScreen() {
                         </nav>
                         {/* <!-- / Navbar --> */}
                         {/* <!-- Content wrapper --> */}
+                        <div class="p-4">
+                            <h3>
+                                Wildfire detection
+                            </h3>
+                        </div>
                         <div class="content-wrapper">
                             {/* <!-- Content --> */}
                             <div class="container-xxl flex-grow-1 container-p-y">

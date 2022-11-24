@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export class SidebarComponent extends Component {
     render() {
@@ -6,11 +7,11 @@ export class SidebarComponent extends Component {
             <div>
                 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                     <div class="app-brand demo">
-                        <a href="index.html" class="app-brand-link">
+                        <Link to="/">
                             <span class="app-brand-logo demo">
                             </span>
                             <span class="app-brand-text demo menu-text fw-bolder ms-2">SafeTrees</span>
-                        </a>
+                        </Link>
                     </div>
                     <div class="menu-inner-shadow"></div>
                     <ul class="menu-inner py-1">
@@ -18,10 +19,28 @@ export class SidebarComponent extends Component {
                             <span class="menu-header-text">User</span>
                         </li>
                         <li class="menu-item">
-                            <a href="" class="menu-link menu-toggle">
+                            <Link to="/dashboard">
                                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
                                 <div data-i18n="Account Settings">Dashboard</div>
-                            </a>
+                            </Link>
+                        </li>
+                        <li class="menu-item">
+                            <Link to="/forestpatch">
+                                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                                <div data-i18n="Account Settings">Forest patch analysis</div>
+                            </Link>
+                        </li>
+                        <li class="menu-item">
+                            <Link to="/waterbody">
+                                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                                <div data-i18n="Account Settings">Waterbody detection</div>
+                            </Link>
+                        </li>
+                        <li class="menu-item">
+                            <Link to="/wildfire">
+                                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                                <div data-i18n="Account Settings">Wildfires</div>
+                            </Link>
                         </li>
                     </ul>
                 </aside>
