@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ExpenseOverviewComponent from '../components/expense_overview_component'
+import ImageUploader from '../components/image_uploader'
 import OrderStatComponent from '../components/order_stat_component'
 import PageFooter from '../components/page_footer'
 import SidebarComponent from '../components/sidebar_component'
@@ -141,6 +142,7 @@ export class DashboardScreen extends Component {
                                                 </div>
                                             </div>
                                         </div>
+                                        <ImageUploader />
                                         <div class="col-lg-4 col-md-4 order-1">
                                             <div class="row">
                                                 <div class="col-lg-6 col-md-12 col-6 mb-4">
