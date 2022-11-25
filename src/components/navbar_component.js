@@ -78,7 +78,6 @@ export default function NavbarComponent() {
                 className="btn btn-primary"
                 onClick={() => {
                   localStorage.removeItem("token");
-                  alert("Logout Successful");
                   window.location.href = "/";
                 }}
               >

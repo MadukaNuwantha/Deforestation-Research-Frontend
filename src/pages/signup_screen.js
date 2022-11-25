@@ -14,7 +14,6 @@ export default function SignUpScreen() {
     };
     let res = await User.sign_in(newUser);
     localStorage.setItem("token", res.token);
-    alert("Registration Successful");
     window.location.href = "/dashboard";
   };
 

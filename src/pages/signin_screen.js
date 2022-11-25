@@ -12,7 +12,6 @@ export default function SignInScreen() {
     };
     let res = await User.sign_in(loginUser);
     localStorage.setItem("token", res.token);
-    alert("Login Successful");
     if(res.token){
       window.location.href = "/dashboard";
     }
