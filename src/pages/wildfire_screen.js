@@ -67,7 +67,7 @@ export default function WildfireScreen() {
                             class="form-control"
                             type="file"
                             id="formFile"
-                            accept="image/jpg, image/png"
+                            accept="image/jpg, image/png, image/jpeg"
                             onChange={handleImageSelection}
                           />
                         </div>

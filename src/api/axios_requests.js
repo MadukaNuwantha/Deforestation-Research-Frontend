@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const root = {
-    "prediction" : "http://127.0.0.1:8000",
-    "user": "http://localhost:8080"
+    "predict" : "http://127.0.0.1:8000",
+    "user": "http://127.0.0.1:8080"
 }
 
 const get = async (url, mode) => {

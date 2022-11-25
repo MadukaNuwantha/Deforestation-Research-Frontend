@@ -1,4 +1,5 @@
 import axios from "axios"
+import { Form } from "react-router-dom"
 import api from "../api/axios_requests"
 
 const sign_in = async (payload) => {
@@ -33,4 +34,16 @@ const auth = async (token) => {
     return data
 }
 
-export default { sign_in, sign_up, auth }
+const savePrediction = async (payload, token) => {
+
+    const config = {
+        headers: {
+            "x-auth-token": token
+        },
+      };
+    let data = await axios.post("http://127.0.0.1:8080/api/prediction/", payload, config)
+
+    return data
+}
+
+export default { sign_in, sign_up, auth, savePrediction }
