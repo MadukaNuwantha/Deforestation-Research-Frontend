@@ -5,7 +5,7 @@ export class SidebarComponent extends Component {
     render() {
         return (
             <div>
-                <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+                <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme p-3">
                     <div class="app-brand demo">
                         <Link to="/">
                             <span class="app-brand-logo demo">
