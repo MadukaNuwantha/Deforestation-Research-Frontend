@@ -92,7 +92,7 @@ export default function SignInScreen() {
                 </div>
                 <p className="text-center">
                   <span>New on our platform?</span>
-                  <a href="auth-register-basic.html">
+                  <a href="/">
                     <span>Create an account</span>
                   </a>
                 </p>

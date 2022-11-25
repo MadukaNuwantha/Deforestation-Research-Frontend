@@ -13,11 +13,10 @@ export class PageRoutes extends Component {
     return (
       <Router>
         <Routes>
-          <Route path='/' element={<LandingScreen />} />
           <Route path='/waterbody' element={<WaterbodyScreen />} />
           <Route path='/forestpatch' element={<ForestPatchScreen />} />
           <Route path='/wildfire' element={<WildfireScreen />} />
-          <Route path='/signin' element={<SignInScreen />} />
+          <Route path='/' element={<SignInScreen />} />
           <Route path='/signup' element={<SignUpScreen />} />
           <Route path='/dashboard' element={<Dashboard />} />
         </Routes>

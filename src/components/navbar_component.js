@@ -79,7 +79,7 @@ export default function NavbarComponent() {
                 onClick={() => {
                   localStorage.removeItem("token");
                   alert("Logout Successful");
-                  window.location.href = "/signin";
+                  window.location.href = "/";
                 }}
               >
                 Logout

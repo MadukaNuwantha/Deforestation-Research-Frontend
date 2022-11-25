@@ -7,7 +7,7 @@ export class SidebarComponent extends Component {
       <div>
         <aside
           id="layout-menu"
-          class="layout-menu menu-vertical menu bg-menu-theme p-3"
+          class="layout-menu menu-vertical menu bg-menu-theme p-3 h-100"
         >
           <div class="app-brand demo">
             <Link to="/">
