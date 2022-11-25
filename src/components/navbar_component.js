@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import User from "../services/user";
 
 export default function NavbarComponent() {
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+
+  useEffect(async () => {
+    let token = localStorage.getItem("token");
+    if (token) {
+      let responseAuth = await User.auth(token);
+      setEmail(responseAuth.data.result.email);
+      setUsername(responseAuth.data.result.username);
+    }
+  }, []);
+
   return (
     <div>
       <nav
@@ -40,7 +53,7 @@ export default function NavbarComponent() {
                 data-show-count="true"
                 aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
               >
-                Star
+                {email}
               </a>
             </li>
             {/* <!-- User --> */}

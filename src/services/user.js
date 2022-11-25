@@ -1,3 +1,4 @@
+import axios from "axios"
 import api from "../api/axios_requests"
 
 const sign_in = async (payload) => {
@@ -19,11 +20,15 @@ const sign_up = async (payload) => {
 }
 
 const auth = async (token) => {
-    let config = {
-        "x-auth-token": token,
-        "Content-Type": "application/json"
-    }
-    let data = await api.post("api/user/auth", payload, config, "user")
+
+    const config = {
+        headers: {
+          "x-auth-token": token,
+          "Content-type": "application/json",
+        },
+      };
+
+    let data = await axios.get("http://localhost:8080/api/user/auth", config)
 
     return data
 }
