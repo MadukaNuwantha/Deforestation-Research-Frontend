@@ -46,19 +46,6 @@ export class SidebarComponent extends Component {
                 <div data-i18n="Account Settings">Wildfires</div>
               </Link>
             </li>
-            <li class="menu-item">
-              <button
-                className="btn btn-primary btn-lg"
-                // onClick={() => {
-                //   localStorage.removeItem("token");
-                //   alert("Logout Successful");
-                //   window.location.href = "/signin";
-                // }}
-              >
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
-                <div data-i18n="Account Settings">Logout</div>
-              </button>
-            </li>
           </ul>
         </aside>
       </div>
