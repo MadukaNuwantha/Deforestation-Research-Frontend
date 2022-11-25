@@ -1,0 +1,26 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "title": "Forest patch detection",
+        "point1": "Monitoring the forest cover by using image footage",
+        "point2": "Identify obstacles and determine the forest areas accurately",
+        "point3": "Utilization of forest monitoring process"
+      },
+      {
+        "id": 2,
+        "title": "Water Bodies Identification System in Forest Area",
+        "point1": "Identify every water body that is situated in the forest",
+        "point2": "Identify obstacles and determine the forest areas accurately",
+        "point3": "Utilization of forest monitoring process"
+      },
+      {
+        "id": 3,
+        "title": "Wild Fire Detection System",
+        "point1": "Identify any unauthorized/illegal constructions in the forest.",
+        "point2": "Emphasis should be placed on dangerous/unsafe roads, shortcuts, and unmarked roads used by people.",
+        "point3": "Utilization of forest monitoring process"
+      }
+    ]
+  }
+  
