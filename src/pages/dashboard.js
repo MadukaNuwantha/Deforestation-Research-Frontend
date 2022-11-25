@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "@iconify/react";
 import ResearchComponent from "../components/research_component";
 import PageFooter from "../components/page_footer";
 import SidebarComponent from "../components/sidebar_component";
@@ -33,18 +34,38 @@ export default function Dashboard() {
                               MONITORING
                             </h1>
                             <p class="mb-2">
+                              <Icon
+                                icon="fe:list-bullet"
+                                width={20}
+                                style={{ marginRight: 8 }}
+                              />{" "}
                               At the moment, forests cover around 31% of the
                               Earth's land surface.
                             </p>
                             <p class="mb-2">
+                              <Icon
+                                icon="fe:list-bullet"
+                                width={20}
+                                style={{ marginRight: 8 }}
+                              />{" "}
                               Approximately 420 million hectares of forest have
                               been lost since 1990
                             </p>
                             <p class="mb-2">
+                              <Icon
+                                icon="fe:list-bullet"
+                                width={20}
+                                style={{ marginRight: 8 }}
+                              />{" "}
                               Tropical rainforests have the highest
                               concentration of deforestation..
                             </p>
                             <p class="mb-2">
+                              <Icon
+                                icon="fe:list-bullet"
+                                width={20}
+                                style={{ marginRight: 8 }}
+                              />{" "}
                               Proper monitoring of deforestation helps to take
                               actions against deforestation.{" "}
                             </p>
@@ -71,12 +92,8 @@ export default function Dashboard() {
                       <div className="col-lg-4 col-md-4">
                         <ResearchComponent
                           title={singleComponenet.title}
-                          point1={
-                            singleComponenet.point1
-                          }
-                          point2={
-                            singleComponenet.point2
-                          }
+                          point1={singleComponenet.point1}
+                          point2={singleComponenet.point2}
                           point3={singleComponenet.point3}
                         />
                       </div>

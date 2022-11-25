@@ -3,6 +3,7 @@ import PageFooter from "../components/page_footer";
 import SidebarComponent from "../components/sidebar_component";
 import forest_patch from "../services/forest_patch";
 import NavbarComponent from "../components/navbar_component";
+import { Icon } from "@iconify/react";
 
 export default function ForestPatchScreen() {
   const [imgData, setImgData] = useState(null);
@@ -45,6 +46,16 @@ export default function ForestPatchScreen() {
             {/* <!-- Content wrapper --> */}
             <div class="p-4">
               <h3>Forest patch detection</h3>
+              <p>
+                {" "}
+                <Icon
+                  icon="fluent:document-bullet-list-multiple-24-filled"
+                  width={20}
+                  style={{ marginRight: 8 }}
+                />
+                This component shows how deforestation is monitored by the
+                patches from airborne drone images{" "}
+              </p>
             </div>
             <div class="content-wrapper">
               {/* <!-- Content --> */}

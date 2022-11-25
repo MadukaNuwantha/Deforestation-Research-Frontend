@@ -3,6 +3,7 @@ import PageFooter from "../components/page_footer";
 import SidebarComponent from "../components/sidebar_component";
 import wildfire from "../services/wildfire";
 import NavbarComponent from "../components/navbar_component";
+import { Icon } from "@iconify/react";
 
 export default function WildfireScreen() {
   const [imgData, setImgData] = useState(null);
@@ -45,6 +46,11 @@ export default function WildfireScreen() {
             {/* <!-- Content wrapper --> */}
             <div class="p-4">
               <h3>Wildfire detection</h3>
+              <p>               <Icon
+                  icon="fluent:document-bullet-list-multiple-24-filled"
+                  width={20}
+                  style={{ marginRight: 8 }}
+                />In this component identify wild fires in a forest area</p>
             </div>
             <div class="content-wrapper">
               {/* <!-- Content --> */}

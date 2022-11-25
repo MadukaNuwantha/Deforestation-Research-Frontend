@@ -4,7 +4,7 @@ export default function ResearchComponent(props) {
   return (
     <div>
       <div>
-        <div class="card h-100">
+        <div class="card" style={{minHeight:"400px"}}>
           <div class="card-header d-flex align-items-center justify-content-between pb-0">
             <div class="card-title mb-4">
               <h2 class="m-0 me-2">{props.title}</h2>
